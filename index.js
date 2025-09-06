@@ -1,4 +1,4 @@
-const newInput = document.createElement("input");
+const newInput = document.createElement("input");a
 const newButton = document.createElement("button");
 const newButton2 = document.createElement("button");
 const newButton3 = document.createElement("button");
@@ -463,6 +463,11 @@ function Fight2() {
     if (PlayerHealth <= 0) {
         gameOver();
     } if (BossHealth <= 0) {
-        youWin();
+        game25();
     }
+     function game25() {
+    document.getElementById("evil").innerHTML = "I give up! Credits: Beth Best Games";
+    document.getElementById("bigbutts").setAttribute("onclick", "youWin()");
+}
+
 }
