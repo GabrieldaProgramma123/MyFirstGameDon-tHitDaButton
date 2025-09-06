@@ -1,4 +1,4 @@
-const newInput = document.createElement("input");a
+const newInput = document.createElement("input");
 const newButton = document.createElement("button");
 const newButton2 = document.createElement("button");
 const newButton3 = document.createElement("button");
@@ -172,6 +172,8 @@ function game20() {
 }
 function youWin() {
     window.alert("From Gabe Studios, Great Job! Refresh to Play Again!");
+    document.getElementById("evil").innetHTML = ("I give up! Credit to Gabe Studios!");
+     document.getElementById("bigbutts").setAttribute("onclick", "youWin()");
 }
 function checkTurn() {
   if (p1turn) {
@@ -463,11 +465,6 @@ function Fight2() {
     if (PlayerHealth <= 0) {
         gameOver();
     } if (BossHealth <= 0) {
-        game25();
+        youWin();
     }
-     function game25() {
-    document.getElementById("evil").innerHTML = "I give up! Credits: Beth Best Games";
-    document.getElementById("bigbutts").setAttribute("onclick", "youWin()");
-}
-
 }
